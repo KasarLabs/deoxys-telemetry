@@ -24,17 +24,8 @@ import blockIcon from '../../icons/blockchain-icon.svg';
 import finalizedIcon from '../../icons/distribute-icon.svg';
 import blockTimeIcon from '../../icons/stopwatch-icon.svg';
 import lastTimeIcon from '../../icons/timer.svg';
-import listIcon from '../../icons/list-alt-regular.svg';
-import worldIcon from '../../icons/location.svg';
-import settingsIcon from '../../icons/settings.svg';
-import statsIcon from '../../icons/graph.svg';
-import kasarImg from '../../assets/kasarLogo.png'
 import deoxysImg from '../../assets/deoxys.png'
 
-import { FiGithub } from "react-icons/fi";
-import { PiTwitterLogoBold } from "react-icons/pi";
-import { SiGoogledocs } from "react-icons/si";
-import { MdOutlineContactSupport } from "react-icons/md";
 
 import './Header.css';
 
@@ -67,14 +58,12 @@ export class Header extends React.Component<HeaderProps, { pressedButton: Button
 
   // Event handler for button clicks
   handleButtonClick = (buttonId: ButtonId) => {
-    console.log('Button clicked:', buttonId); // Add this line to check if method is called
     this.setState({ pressedButton: buttonId });
   };
   public render() {
     const { best, finalized, blockTimestamp, blockAverage } = this.props;
     const { currentTab, setDisplay } = this.props;
 
-    console.log(this.state.pressedButton)
     return (
       <div className="Header">
         <div className="Header-top-row">
@@ -96,10 +85,6 @@ export class Header extends React.Component<HeaderProps, { pressedButton: Button
             <button className="button-outline" onClick={() => window.open('https://t.me/kasarlabs')}>
               Support
             </button>
-            {/* <FiGithub onClick={() => window.open('https://github.com/KasarLabs/deoxys')} size={30} />
-            <PiTwitterLogoBold onClick={() => window.open('https://twitter.com/kasarlabs')} size={30} />
-            <SiGoogledocs onClick={() => window.open('https://deoxys-docs.kasar.io')} size={30} />
-            <MdOutlineContactSupport onClick={() => window.open('https://t.me/kasarlabs')} size={30} /> */}
           </div>
         </div>
         <div className="Header-row-first">
@@ -123,22 +108,6 @@ export class Header extends React.Component<HeaderProps, { pressedButton: Button
 
         </div>
         <div className="Header-row-second">
-          {/* <button className={`button-outline ${this.state.pressedButton === 'nodes' ? 'pressed' : ''}`}
-            onClick={() => this.handleButtonClick('nodes')}>
-            Nodes
-          </button>
-          <button className={`button-outline ${this.state.pressedButton === 'map' ? 'pressed' : ''}`}
-            onClick={() => this.handleButtonClick('map')}>
-            Map
-          </button>
-          <button className={`button-outline ${this.state.pressedButton === 'stats' ? 'pressed' : ''}`}
-            onClick={() => this.handleButtonClick('stats')}>
-            Stats
-          </button>
-          <button className={`button-outline ${this.state.pressedButton === 'params' ? 'pressed' : ''}`}
-            onClick={() => this.handleButtonClick('params')}>
-            Params
-          </button> */}
 
           <Tab
             text="Nodes"

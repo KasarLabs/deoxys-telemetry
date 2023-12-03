@@ -27,8 +27,10 @@ interface TileProps {
 export function Tile(props: TileProps) {
   return (
     <div className="Tile">
-      <Icon src={props.icon} />
-      <span className="Tile-label">{props.title}</span>
+      <div className="Tile-row">
+        <Icon src={props.icon} />
+        <span className="Tile-label">{props.title}</span>
+      </div>
       <span className="Tile-content">{props.children}</span>
     </div>
   );
