@@ -19,44 +19,49 @@ along with this program. If not, see <https://www.gnu.org/licenses/>.
 .Tile {
   font-size: 1.8em;  /* Increased text size */
   text-align: left;
-  width: 200px;
-  height: 80px;
-  display: inline-block;
-  position: relative;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  border-radius: 10px;
-  padding: 20px;
+  justify-content: center;
   color: black;
-  margin: 20px;
+  border-right: 1px solid #666;
+  padding: 10px 0px;
+  margin: 10px;
+}
+
+.Row-tiles .Tile:last-child {
+  border-right: none;
+}
+
+.Tile-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
 }
 
 .Tile-label {
-  position: absolute;
   background-color: transparent;
   padding: 2px;
-  left: 50px;
-  right: 0;
   font-size: 0.6em;  /* Increased text size */
-  font-weight: 600;  /* Increased text weight */
+  font-weight: 800;  /* Increased text weight */
   color: black;
+  letter-spacing: 2px;
 }
 
 .Tile-content {
-  position: absolute;
-  bottom: 10px;
   background-color: transparent;
   padding: 2px;
-  left: 50px;
-  right: 0;
-  font-weight: 600;  /* Increased text weight */
-  font-size: 0.6em;  /* Increased text size */
-  color: black;
+  font-weight: 400;  /* Increased text weight */
+  font-size: 0.5em;  /* Increased text size */
+  color: #666;
 }
 
 .Tile .Icon {
-  position: absolute;
   background-color: transparent;
-  left: 15px;
   font-size: 0.9em;  /* Increased text size */
   color: black;
   border: none;

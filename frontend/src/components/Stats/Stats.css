@@ -24,7 +24,7 @@ along with this program. If not, see <https://www.gnu.org/licenses/>.
 
 .Stats-category {
   text-align: left;
-  background-color: #fff;
+  background-color: #000;
   margin-bottom: 2.5rem;
   padding: 1rem;
 }
@@ -37,7 +37,7 @@ along with this program. If not, see <https://www.gnu.org/licenses/>.
 }
 
 .Stats-category tr:nth-child(even) {
-  background-color: #eee;
+  background-color: #000;
 }
 
 .Stats-percent {
