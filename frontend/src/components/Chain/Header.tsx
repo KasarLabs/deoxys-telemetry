@@ -67,11 +67,17 @@ export class Header extends React.Component<HeaderProps, { pressedButton: Button
     return (
       <div className="Header">
         <div className="Header-top-row">
-          <img
-            src={deoxysImg}
-            alt="Deoxys"
-            className="ImageIcon"
-          />
+          <div className="Image-row">
+            <img
+              src={deoxysImg}
+              alt="Deoxys"
+              className="ImageIcon"
+            />
+            <div className="Column-image">
+              <p className='text-bold'>Deoxis</p>
+              <p className='text-gray'>v0.1.0-alpha</p>
+            </div>
+          </div>
           <div className="Row-icons">
             <button className="button-outline" onClick={() => window.open('https://github.com/KasarLabs/deoxys')}>
               Github

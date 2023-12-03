@@ -7,6 +7,34 @@
   padding: 20px 0px;
 }
 
+.Image-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.Column-image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 5px;
+}
+
+.Column-image p {
+  margin: 0;
+}
+
+.text-gray {
+  color: #666;
+}
+
+.text-bold {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
 .Header-top-row {
   display: flex;
   justify-content: space-between;
