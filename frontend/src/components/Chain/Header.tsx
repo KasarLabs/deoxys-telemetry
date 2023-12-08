@@ -24,8 +24,7 @@ import blockIcon from '../../icons/blockchain-icon.svg';
 import finalizedIcon from '../../icons/distribute-icon.svg';
 import blockTimeIcon from '../../icons/stopwatch-icon.svg';
 import lastTimeIcon from '../../icons/timer.svg';
-import deoxysImg from '../../assets/deoxys.png'
-
+import deoxysImg from '../../assets/deoxys.png';
 
 import './Header.css';
 
@@ -40,7 +39,10 @@ interface HeaderProps {
 
 type ButtonId = 'nodes' | 'map' | 'stats' | 'params';
 
-export class Header extends React.Component<HeaderProps, { pressedButton: ButtonId | null }> {
+export class Header extends React.Component<
+  HeaderProps,
+  { pressedButton: ButtonId | null }
+> {
   public shouldComponentUpdate(nextProps: HeaderProps, nextState: any) {
     return (
       this.props.best !== nextProps.best ||
@@ -68,33 +70,40 @@ export class Header extends React.Component<HeaderProps, { pressedButton: Button
       <div className="Header">
         <div className="Header-top-row">
           <div className="Image-row">
-            <img
-              src={deoxysImg}
-              alt="Deoxys"
-              className="ImageIcon"
-            />
+            <img src={deoxysImg} alt="Deoxys" className="ImageIcon" />
             <div className="Column-image">
-              <p className='text-bold'>Deoxis</p>
-              <p className='text-gray'>v0.1.0-alpha</p>
+              <p className="text-bold gradient-text">Deoxys</p>
+              <p className="text-gray">v0.1.0-alpha</p>
             </div>
           </div>
           <div className="Row-icons">
-            <button className="button-outline" onClick={() => window.open('https://github.com/KasarLabs/deoxys')}>
+            <button
+              className="button-outline"
+              onClick={() => window.open('https://github.com/KasarLabs/deoxys')}
+            >
               Github
             </button>
-            <button className="button-outline" onClick={() => window.open('https://twitter.com/kasarlabs')}>
+            <button
+              className="button-outline"
+              onClick={() => window.open('https://twitter.com/kasarlabs')}
+            >
               Twitter
             </button>
-            <button className="button-outline" onClick={() => window.open('https://deoxys-docs.kasar.io')}>
+            <button
+              className="button-outline"
+              onClick={() => window.open('https://deoxys-docs.kasar.io')}
+            >
               Docs
             </button>
-            <button className="button-outline" onClick={() => window.open('https://t.me/kasarlabs')}>
+            <button
+              className="button-outline"
+              onClick={() => window.open('https://t.me/kasarlabs')}
+            >
               Support
             </button>
           </div>
         </div>
         <div className="Header-row-first">
-
           <div className="Row-tiles">
             <Tile icon={blockIcon} title="Best Block">
               #{formatNumber(best)}
@@ -111,10 +120,8 @@ export class Header extends React.Component<HeaderProps, { pressedButton: Button
               <Ago when={blockTimestamp} />
             </Tile>
           </div>
-
         </div>
         <div className="Header-row-second">
-
           <Tab
             text="Nodes"
             label="node"

@@ -1,0 +1,40 @@
+/* Footer.module.css */
+
+.main-footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 15%;
+  padding: 20px 15%;
+}
+.img-footer {
+  width: 50px;
+  height: 50px;
+}
+
+.col-footer {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.text-footer {
+  margin: 0;
+  font-size: 14px;
+}
+
+.icons-row-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.icon-footer {
+  width: 35px;
+  height: 35px;
+  color: #666;
+}

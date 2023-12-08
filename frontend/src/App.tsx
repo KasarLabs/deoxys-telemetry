@@ -16,7 +16,14 @@
 
 import * as React from 'react';
 import { Types, SortedCollection, Maybe, Compare } from './common';
-import { AllChains, Chains, Chain, Ago, OfflineIndicator } from './components';
+import {
+  AllChains,
+  Chains,
+  Chain,
+  Ago,
+  OfflineIndicator,
+  Footer,
+} from './components';
 import { Row, Column } from './components/List';
 import { Connection } from './Connection';
 import { Persistent, PersistentObject, PersistentSet } from './persist';

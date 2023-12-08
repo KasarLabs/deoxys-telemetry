@@ -24,6 +24,7 @@ import {
 } from '../../state';
 import { getHashData } from '../../utils';
 import { Header } from './';
+import { Footer } from './';
 import { List, Map, Settings, Stats } from '../';
 import { Persistent, PersistentObject, PersistentSet } from '../../persist';
 
@@ -82,6 +83,7 @@ export class Chain extends React.Component<ChainProps, ChainState> {
         <div className="Chain-content-container">
           <div className="Chain-content">{this.renderContent()}</div>
         </div>
+        {/* <Footer /> */}
       </div>
     );
   }
