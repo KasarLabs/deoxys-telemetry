@@ -132,18 +132,18 @@ export class Header extends React.Component<
             setDisplay={setDisplay}
           />
           <Tab
-            text="Map"
-            label="Map"
-            display="map"
-            tab="map"
-            current={currentTab}
-            setDisplay={setDisplay}
-          />
-          <Tab
             text="Stats"
             label="Stats"
             display="stats"
             tab="stats"
+            current={currentTab}
+            setDisplay={setDisplay}
+          />
+          <Tab
+            text="Map"
+            label="Map"
+            display="map"
+            tab="map"
             current={currentTab}
             setDisplay={setDisplay}
           />
