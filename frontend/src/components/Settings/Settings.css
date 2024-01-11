@@ -18,11 +18,11 @@ along with this program. If not, see <https://www.gnu.org/licenses/>.
 
 .Settings {
   text-align: center;
+  padding-top: 50px;
 }
 
 .Settings-category {
   text-align: left;
-  width: 500px;
   margin: 0 auto;
   padding: 2em 0;
 }

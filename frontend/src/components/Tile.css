@@ -17,7 +17,7 @@ along with this program. If not, see <https://www.gnu.org/licenses/>.
 */
 
 .Tile {
-  font-size: 1.8em;  /* Increased text size */
+  font-size: 1.8em; /* Increased text size */
   text-align: left;
   width: 25%;
   display: flex;
@@ -46,8 +46,8 @@ along with this program. If not, see <https://www.gnu.org/licenses/>.
 .Tile-label {
   background-color: transparent;
   padding: 2px;
-  font-size: 0.6em;  /* Increased text size */
-  font-weight: 800;  /* Increased text weight */
+  font-size: 12px; /* Increased text size */
+  font-weight: 800; /* Increased text weight */
   color: black;
   letter-spacing: 2px;
 }
@@ -55,14 +55,14 @@ along with this program. If not, see <https://www.gnu.org/licenses/>.
 .Tile-content {
   background-color: transparent;
   padding: 2px;
-  font-weight: 400;  /* Increased text weight */
-  font-size: 0.5em;  /* Increased text size */
+  font-weight: 400; /* Increased text weight */
+  font-size: 0.5em; /* Increased text size */
   color: #666;
 }
 
 .Tile .Icon {
   background-color: transparent;
-  font-size: 0.9em;  /* Increased text size */
+  font-size: 0.9em; /* Increased text size */
   color: black;
   border: none;
 }
