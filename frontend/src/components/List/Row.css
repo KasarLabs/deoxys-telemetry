@@ -17,12 +17,13 @@ along with this program. If not, see <https://www.gnu.org/licenses/>.
 */
 
 .Row {
-  color: #b5aeae;
+  color: #000;
+  background-color: #fff;
   cursor: pointer;
 }
 
 .Row-synced {
-  color: #fff;
+  color: #000;
 }
 
 .Row-pinned td:first-child {
@@ -42,9 +43,9 @@ along with this program. If not, see <https://www.gnu.org/licenses/>.
 }
 
 .Row-stale {
-  color: #555;
+  color: #666;
 }
 
-.Row:hover {
+/* .Row:hover {
   background-color: #1e1e1e;
-}
+} */
