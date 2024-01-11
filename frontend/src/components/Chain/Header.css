@@ -4,7 +4,7 @@
   min-width: 1350px;
   display: flex;
   flex-direction: column;
-  padding: 20px 0px;
+  padding: 20px 10%;
 }
 
 .Image-row {
@@ -30,9 +30,8 @@
   color: #666;
 }
 
-.text-bold {
+.text-sm {
   font-size: 12px;
-  font-weight: 800;
 }
 
 .Header-top-row {

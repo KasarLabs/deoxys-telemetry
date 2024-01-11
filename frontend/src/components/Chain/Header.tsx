@@ -73,50 +73,51 @@ export class Header extends React.Component<
             <img src={deoxysImg} alt="Deoxys" className="ImageIcon" />
             <div className="Column-image">
               <p className="text-bold gradient-text">Deoxys</p>
-              <p className="text-gray">v0.1.0-alpha</p>
+              <p className="text-gray text-sm">v0.1.0-alpha</p>
+              <p className="text-gray text-sm">Starknet Mainnet</p>
             </div>
           </div>
           <div className="Row-icons">
             <button
-              className="button-outline"
+              className="button-outline text-bold"
               onClick={() => window.open('https://github.com/KasarLabs/deoxys')}
             >
-              Github
+              Run
             </button>
             <button
-              className="button-outline"
+              className="button-outline text-bold"
               onClick={() => window.open('https://twitter.com/kasarlabs')}
-            >
-              Twitter
-            </button>
-            <button
-              className="button-outline"
-              onClick={() => window.open('https://deoxys-docs.kasar.io')}
             >
               Docs
             </button>
             <button
-              className="button-outline"
+              className="button-outline text-bold"
+              onClick={() => window.open('https://deoxys-docs.kasar.io')}
+            >
+              Help
+            </button>
+            <button
+              className="button-outline text-bold"
               onClick={() => window.open('https://t.me/kasarlabs')}
             >
-              Support
+              Github
             </button>
           </div>
         </div>
         <div className="Header-row-first">
           <div className="Row-tiles">
-            <Tile icon={blockIcon} title="Best Block">
+            <Tile icon={blockIcon} title="Best">
               #{formatNumber(best)}
             </Tile>
-            <Tile icon={finalizedIcon} title="Finalized Block">
+            <Tile icon={finalizedIcon} title="Finalized">
               #{formatNumber(finalized)}
             </Tile>
-            <Tile icon={lastTimeIcon} title="Average Time">
+            <Tile icon={lastTimeIcon} title="Average">
               {blockAverage == null
                 ? '-'
                 : secondsWithPrecision(blockAverage / 1000)}
             </Tile>
-            <Tile icon={blockTimeIcon} title="Last Block">
+            <Tile icon={blockTimeIcon} title="Latest">
               <Ago when={blockTimestamp} />
             </Tile>
           </div>
