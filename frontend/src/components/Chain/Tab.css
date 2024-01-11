@@ -31,16 +31,15 @@ along with this program. If not, see <https://www.gnu.org/licenses/>.
 }
 
 .Chain-Tab:hover {
-  background: #FFF;
+  background: #fff;
 }
 
 .Chain-Tab-on,
 .Chain-Tab-on:hover {
-  background: #FFF;
+  background: #fff;
   box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
   color: #000;
 }
-
 
 .button-outline {
   background-color: white;
@@ -63,10 +62,9 @@ along with this program. If not, see <https://www.gnu.org/licenses/>.
 }
 
 .button-outline:hover {
-  color: #F5F5F5;
+  color: #f5f5f5;
   background: black;
 }
-
 
 .button-outline.pressed {
   background-color: black;
