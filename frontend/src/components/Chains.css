@@ -134,3 +134,10 @@ along with this program. If not, see <https://www.gnu.org/licenses/>.
   background: #393838;
   color: #fff;
 }
+
+@media (max-width: 900px) {
+  .Chains {
+    padding: 0px;
+    min-width: 900px;
+  }
+}

@@ -143,15 +143,15 @@ export default class App extends React.Component {
       : null;
 
     Ago.timeDiff = timeDiff;
-
-    if (chains.length === 0) {
-      return (
-        <div className="App App-no-telemetry">
-          <OfflineIndicator status={status} />
-          Waiting for telemetry&hellip;
-        </div>
-      );
-    }
+    //ICI
+    // if (chains.length === 0) {
+    //   return (
+    //     <div className="App App-no-telemetry">
+    //       <OfflineIndicator status={status} />
+    //       Waiting for telemetry&hellip;
+    //     </div>
+    //   );
+    // }
 
     const overlay =
       tab === 'all-chains' ? (
