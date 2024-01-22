@@ -33,7 +33,9 @@ export class Tab extends React.Component<TabProps> {
   public render() {
     const { label, text, display, current } = this.props;
     const highlight = display === current;
-    const className = highlight ? 'pressed button-outline' : 'button-outline';
+    const className = highlight
+      ? 'pressed button-outline text-bold'
+      : 'button-outline text-bold';
 
     return (
       <button className={className} onClick={this.onClick} title={label}>

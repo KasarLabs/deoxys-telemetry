@@ -43,8 +43,7 @@ along with this program. If not, see <https://www.gnu.org/licenses/>.
 }
 
 .Setting-on .Setting-switch {
-  background: linear-gradient(to right, rgb(51, 140, 245), rgb(79, 209, 197));
-  border-color: linear-gradient(to right, rgb(51, 140, 245), rgb(79, 209, 197));
+  background: #e6936e;
 }
 
 .Setting-knob {

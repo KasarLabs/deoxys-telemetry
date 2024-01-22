@@ -3,8 +3,8 @@
   color: #000;
   min-width: 1350px;
   display: flex;
-  flex-direction: column;  
-  padding: 20px 0px;
+  flex-direction: column;
+  padding: 20px 10%;
 }
 
 .Image-row {
@@ -30,9 +30,8 @@
   color: #666;
 }
 
-.text-bold {
-  font-size: 1.5rem;
-  font-weight: 800;
+.text-sm {
+  font-size: 12px;
 }
 
 .Header-top-row {
@@ -40,14 +39,15 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 0px 50px;
+  padding: 0px 15% 20px 15%;
 }
 
-.Header-row-first{
+.Header-row-first {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  padding: 0px 15%;
 }
 
 .Header-row-second {
@@ -59,7 +59,7 @@
   gap: 20px;
 }
 
-.Row-icons{
+.Row-icons {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -76,7 +76,7 @@
   margin-bottom: 10px;
   border-radius: 10px;
   width: 100%;
-  margin: 10px 50px;
+  margin: 10px 0px;
 }
 
 .Header-tabs {
@@ -93,12 +93,11 @@
   border-radius: 50%;
 }
 
-
 .button-outline {
   background-color: white;
   /* default background color */
   border: none;
-  box-shadow:2px 2px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
   /* example shadow */
   color: black;
   /* default text color */
@@ -116,10 +115,9 @@
 }
 
 .button-outline:hover {
-  color: #F5F5F5;
+  color: #f5f5f5;
   background: black;
 }
-
 
 .button-outline.pressed {
   background-color: black;
@@ -128,4 +126,12 @@
 
 .button-outline.disabled {
   cursor: not-allowed;
+}
+
+.gradient-text {
+  background: linear-gradient(to right, #338cf5, #4fd1c5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent; /* Fallback for browsers that do not support text-fill-color */
 }
