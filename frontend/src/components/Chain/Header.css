@@ -135,3 +135,33 @@
   background-clip: text;
   color: transparent; /* Fallback for browsers that do not support text-fill-color */
 }
+
+@media (max-width: 900px) {
+  .Header {
+    min-width: 100%;
+    padding: 0px;
+  }
+  .Header-top-row {
+    padding: 20px;
+    gap: 50px;
+  }
+  .Header-row-first {
+    min-width: 100%;
+    margin: 0px;
+    padding: 0px;
+  }
+  .ImageIcon {
+    width: 40px;
+    height: 40px;
+  }
+  .button-outline {
+    padding: 5px 5px;
+    font-size: 10px;
+  }
+  .text-sm {
+    font-size: 8px;
+  }
+  .Header-row-second {
+    width: 100%;
+  }
+}

@@ -143,7 +143,7 @@ export default class App extends React.Component {
       : null;
 
     Ago.timeDiff = timeDiff;
-
+    //ICI
     if (chains.length === 0) {
       return (
         <div className="App App-no-telemetry">

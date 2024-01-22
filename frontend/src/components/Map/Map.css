@@ -27,3 +27,17 @@ along with this program. If not, see <https://www.gnu.org/licenses/>.
   top: 0;
   bottom: 0;
 }
+
+@media (max-width: 900px) {
+  .Map {
+    min-width: 350px;
+    background: url('../../assets/world-map.svg') no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+}
