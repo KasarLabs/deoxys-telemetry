@@ -21,7 +21,6 @@ along with this program. If not, see <https://www.gnu.org/licenses/>.
   text-align: left;
   font-family: 'Inter', Helvetica, Arial, sans-serif;
   font-size: 16px;
-  min-width: 1318px;
 }
 
 .App-no-telemetry {
@@ -42,7 +41,6 @@ along with this program. If not, see <https://www.gnu.org/licenses/>.
 @media (max-width: 900px) {
   .App {
     font-size: 12px;
-    min-width: 390px;
     max-width: 500px;
   }
 }
