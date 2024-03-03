@@ -70,8 +70,8 @@ along with this program. If not, see <https://www.gnu.org/licenses/>.
 @media (max-width: 900px) {
   .Tile {
     font-size: 10px; /* Increased text size */
-    padding: 10px 0px;
-    margin: 10px;
+    padding: 0px;
+    margin: 10px 0px;
   }
   .Tile-label {
     background-color: transparent;
@@ -80,5 +80,8 @@ along with this program. If not, see <https://www.gnu.org/licenses/>.
     font-weight: 800; /* Increased text weight */
     color: black;
     letter-spacing: 0px;
+  }
+  .Tile-content {
+    font-size: 10px; /* Increased text size */
   }
 }

@@ -24,7 +24,7 @@ import blockIcon from '../../icons/blockchain-icon.svg';
 import finalizedIcon from '../../icons/distribute-icon.svg';
 import blockTimeIcon from '../../icons/stopwatch-icon.svg';
 import lastTimeIcon from '../../icons/timer.svg';
-import deoxysImg from '../../assets/deoxys.png';
+import StarknetImg from '../../assets/starknet.png';
 
 import './Header.css';
 
@@ -70,35 +70,37 @@ export class Header extends React.Component<
       <div className="Header">
         <div className="Header-top-row">
           <div className="Image-row">
-            <img src={deoxysImg} alt="Deoxys" className="ImageIcon" />
+            <img src={StarknetImg} alt="Deoxys" className="ImageIcon" />
             <div className="Column-image">
-              <p className="text-bold gradient-text">Deoxys</p>
-              <p className="text-gray text-sm">v0.1.0-alpha</p>
+              <p className="text-bold gradient-text">Starknet</p>
+              <p className="text-gray text-sm">v0.13.1 (JSON-RPC v0.7.1)</p>
               <p className="text-gray text-sm">Starknet Mainnet</p>
             </div>
           </div>
           <div className="Row-icons">
             <button
               className="button-outline text-bold"
-              onClick={() => window.open('https://github.com/KasarLabs/deoxys')}
+              onClick={() =>
+                window.open('https://deoxys.kasar.io/get_started/install')
+              }
             >
               Run
             </button>
             <button
               className="button-outline text-bold"
-              onClick={() => window.open('https://twitter.com/kasarlabs')}
+              onClick={() => window.open('https://deoxys.kasar.io/')}
             >
               Docs
             </button>
             <button
               className="button-outline text-bold"
-              onClick={() => window.open('https://deoxys-docs.kasar.io')}
+              onClick={() => window.open('https://t.me/kasarlabs')}
             >
               Help
             </button>
             <button
               className="button-outline text-bold"
-              onClick={() => window.open('https://t.me/kasarlabs')}
+              onClick={() => window.open('https://github.com/kasarlabs/deoxys')}
             >
               Github
             </button>
