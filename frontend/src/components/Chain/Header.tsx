@@ -81,14 +81,14 @@ export class Header extends React.Component<
             <button
               className="button-outline text-bold"
               onClick={() =>
-                window.open('https://deoxys.kasar.io/get_started/install')
+                window.open('https://starknodes.com/get_started/install')
               }
             >
               Run
             </button>
             <button
               className="button-outline text-bold"
-              onClick={() => window.open('https://deoxys.kasar.io/')}
+              onClick={() => window.open('https://starknodes.com/')}
             >
               Docs
             </button>
