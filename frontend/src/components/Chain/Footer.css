@@ -21,9 +21,23 @@
   gap: 10px;
 }
 
+@media (max-width: 900px) {
+  .col-footer {
+    width: 33%;
+  }
+  .img-footer {
+    width: 35px;
+    height: 35px;
+  }
+  .icons-row-footer {
+    flex-wrap: wrap;
+  }
+}
+
 .text-footer {
   margin: 0;
   font-size: 14px;
+  cursor: pointer;
 }
 
 .icons-row-footer {
@@ -34,7 +48,8 @@
 }
 
 .icon-footer {
-  width: 35px;
-  height: 35px;
+  width: 25px;
+  height: 25px;
   color: #666;
+  cursor: pointer;
 }

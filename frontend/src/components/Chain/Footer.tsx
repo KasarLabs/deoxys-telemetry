@@ -15,15 +15,36 @@ export class Footer extends React.Component {
         </div>
         <div className="col-footer">
           <p className="text-bold text-footer">Products</p>
-          <p className="text-footer">Starkcet</p>
-          <p className="text-footer">Starknode</p>
+          <p
+            className="text-footer"
+            onClick={() => window.open('https://starkcet.com/')}
+          >
+            Starkcet
+          </p>
+          <p
+            className="text-footer"
+            onClick={() => window.open('https://kasar.io/')}
+          >
+            Starknode
+          </p>
         </div>
         <div className="col-footer">
           <p className="text-bold text-footer">Contact us</p>
           <div className="icons-row-footer">
-            <FaTwitter className="icon-footer" />
-            <FaTelegram className="icon-footer" />
-            <FaGithub className="icon-footer" />
+            <FaTwitter
+              onClick={() => window.open('https://twitter.com/kasarLabs')}
+              className="icon-footer"
+            />
+            <FaTelegram
+              onClick={() =>
+                window.open('https://web.telegram.org/k/#@kasarlabs')
+              }
+              className="icon-footer"
+            />
+            <FaGithub
+              onClick={() => window.open('https://github.com/KasarLabs')}
+              className="icon-footer"
+            />
           </div>
         </div>
       </div>
