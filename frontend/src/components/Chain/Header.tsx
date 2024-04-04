@@ -74,7 +74,17 @@ export class Header extends React.Component<
             <div className="Column-image">
               <p className="text-bold gradient-text">Starknet</p>
               <p className="text-gray text-sm">v0.13.1 (JSON-RPC v0.7.1)</p>
-              <p className="text-gray text-sm">Starknet Mainnet</p>
+              <p
+                onClick={() =>
+                  window.open(
+                    'https://docs.starknet.io/documentation/starknet_versions/version_notes/'
+                  )
+                }
+                style={{ cursor: 'pointer' }}
+                className="text-gray text-sm"
+              >
+                Mainnet
+              </p>
             </div>
           </div>
           <div className="Row-icons">

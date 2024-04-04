@@ -83,7 +83,7 @@ export class Chain extends React.Component<ChainProps, ChainState> {
         <div className="Chain-content-container">
           <div className="Chain-content">{this.renderContent()}</div>
         </div>
-        {/* <Footer /> */}
+        <Footer />
       </div>
     );
   }

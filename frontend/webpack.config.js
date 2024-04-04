@@ -36,7 +36,7 @@ module.exports = {
     // Use our index.html as a starting point (to add script links etc to)
     // and make sure to use/copy over the favicon too.
     new HtmlWebpackPlugin({
-      favicon: './assets/favicon.svg',
+      favicon: './assets/favicon.ico',
       template: './assets/index.html',
     }),
   ],
